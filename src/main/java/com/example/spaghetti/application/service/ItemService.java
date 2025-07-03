@@ -27,8 +27,7 @@ public class ItemService {
         return repository.findById(id).orElse(null);
     }
 
-    public String deleteItemById(String id) {
-        boolean deleted = repository.deleteById(id);
-        return deleted ? "Item " + id + " removed" : "Invalid index";
+    public void deleteItemById(String id) {
+        repository.deleteById(id);
     }
 }

@@ -23,8 +23,7 @@ public class ThingService {
         return repository.add(thing);
     }
 
-    public String removeThing(String index) {
-        boolean removed = repository.remove(index);
-        return removed ? "Removed: " + index : "Invalid index";
+    public void removeThing(String index) {
+        repository.remove(index);
     }
 }
