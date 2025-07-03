@@ -1,8 +1,8 @@
-package com.example.spaghetti.controller;
+package com.example.spaghetti.adapter.controller;
 
-import com.example.spaghetti.util.Utils;
-import com.example.spaghetti.model.Thing;
-import com.example.spaghetti.service.ThingService;
+import com.example.spaghetti.infrastructure.util.Utils;
+import com.example.spaghetti.domain.model.Thing;
+import com.example.spaghetti.application.service.ThingService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

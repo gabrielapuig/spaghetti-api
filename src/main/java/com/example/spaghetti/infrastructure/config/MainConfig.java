@@ -1,4 +1,4 @@
-package com.example.spaghetti.config;
+package com.example.spaghetti.infrastructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

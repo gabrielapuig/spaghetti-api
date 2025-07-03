@@ -1,6 +1,6 @@
-package com.example.spaghetti.repository;
+package com.example.spaghetti.domain.repository;
 
-import com.example.spaghetti.model.Item;
+import com.example.spaghetti.domain.model.Item;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;

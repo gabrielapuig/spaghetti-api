@@ -1,4 +1,4 @@
-package com.example.spaghetti.util;
+package com.example.spaghetti.infrastructure.util;
 
 public class Utils {
 

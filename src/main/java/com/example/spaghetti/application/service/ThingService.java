@@ -1,7 +1,7 @@
-package com.example.spaghetti.service;
+package com.example.spaghetti.application.service;
 
-import com.example.spaghetti.model.Thing;
-import com.example.spaghetti.repository.ThingRepository;
+import com.example.spaghetti.domain.model.Thing;
+import com.example.spaghetti.domain.repository.ThingRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.example.spaghetti.service;
+package com.example.spaghetti.application.service;
 
-import com.example.spaghetti.model.Item;
-import com.example.spaghetti.repository.ItemRepository;
+import com.example.spaghetti.domain.model.Item;
+import com.example.spaghetti.domain.repository.ItemRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

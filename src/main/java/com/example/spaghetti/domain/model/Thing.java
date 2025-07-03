@@ -1,20 +1,18 @@
-package com.example.spaghetti.model;
+package com.example.spaghetti.domain.model;
 
 import java.util.UUID;
 
-public class Item {
+public class Thing {
     private String id;
     private String name;
-    private String description;
 
-    public Item() {
+    public Thing() {
         this.id = UUID.randomUUID().toString();
     }
 
-    public Item(String name, String description) {
+    public Thing(String name) {
         this.id = UUID.randomUUID().toString();
         this.name = name;
-        this.description = description;
     }
 
     public String getId() {
@@ -27,13 +25,5 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }

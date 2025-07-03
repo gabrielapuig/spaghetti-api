@@ -1,7 +1,7 @@
-package com.example.spaghetti.controller;
+package com.example.spaghetti.adapter.controller;
 
-import com.example.spaghetti.model.Item;
-import com.example.spaghetti.service.ItemService;
+import com.example.spaghetti.domain.model.Item;
+import com.example.spaghetti.application.service.ItemService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
