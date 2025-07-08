@@ -1,5 +1,6 @@
 package com.example.spaghetti.application.service;
 
+import com.example.spaghetti.domain.exception.ThingNotFoundException;
 import com.example.spaghetti.domain.model.Thing;
 import com.example.spaghetti.domain.repository.ThingRepository;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,10 @@ public class ThingService {
         return repository.add(thing);
     }
 
-    public void removeThing(String index) {
-        repository.remove(index);
+    public void removeThing(String id) {
+        boolean removed = repository.remove(id);
+        if (!removed) {
+            throw new ThingNotFoundException(id);
+        }
     }
 }
